@@ -1,0 +1,104 @@
+body{
+	background-color:#222;
+	color: #EEE; 
+}
+
+/**
+.label{
+	border: 1px solid #444; 
+	overflow-x:auto; 
+	overflow-y:auto; 
+	background-color:#333; 
+	color: #EEE; 
+	text-shadow:#000 0 0 2px; 
+	height: 360px; 
+	padding: 10px; 
+	font-size:12px; 
+	line-height:20px;
+	margin:5px;
+}
+**/
+
+#info{ 
+	font-size: 32px; 
+	color:#EEE;
+	text-shadow:#AAA 1px 1px 2px; 
+	text-align:left;
+	margin:20px 10px;
+}
+
+
+#serverDetails{
+	width: 200px;
+}
+
+.serverDetail{
+	border: 1px solid #444; 
+	overflow-x:auto; 
+	overflow-y:auto; 
+	background-color:#333; 
+	color: #EEE; 
+	text-shadow:#000 0 0 2px; 
+	padding: 10px; 
+	font-size:12px; 
+	line-height:20px;
+	margin:5px;
+}
+
+#tailContainer{
+	border: 1px solid #444; 
+	overflow-x:auto; 
+	overflow-y:auto; 
+	background-color:#333; 
+	color: #EEE; 
+	text-shadow:#000 0 0 2px; 
+	height: 360px; 
+	padding: 10px; 
+	font-size:12px; 
+	line-height:20px;
+	margin:5px;
+}
+
+#tail{
+	
+}
+
+#chart{
+	border: 1px solid #444; 
+	overflow-x:auto; 
+	overflow-y:hidden; 
+	background-color:#333; color: #EEE; 
+	text-shadow:#000 0 0 2px; 
+	height: 400px; 
+	padding: 10px; 
+	font-size:12px; 
+	line-height:20px;
+	margin:5px;
+}
+
+
+.trebuchet{
+	font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;
+}
+
+.ui-dialog-content{
+	font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;
+	font-size:12px; 
+}
+
+.monospace{
+	font-family: Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace;
+}
+
+.selection::selection , .selection *::selection{
+	background: #EEE;color:#000;
+	border-color:#000; 
+	text-shadow:#fff 0 0 2px;
+}
+
+.selection::-moz-selection , .selection *::-moz-selection{
+	background: #EEE;color:#000;
+	border-color:#000; 
+	text-shadow:#fff 0 0 2px;
+}
+  

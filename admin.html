@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logger Admin</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/serverList.js"></script>
+  <script src="js/admin.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/logger.css" />
+
+</head>
+<body>
+  <div id="info" class="monospace selection">Logger Admin</div>
+  <div>
+  	<div class='info'>Manage Logs</div>
+  	<div id="serverDetails" class="monospace selection"></div>
+  	<button onclick="newLog();">New</button><button onclick = "saveLogs()">Save</button>
+  </div>
+</body>
+</html>

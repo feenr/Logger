@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logger</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+  <script>
+  if($.browser.msie){
+    CSSStyleDeclaration = new Object();
+    CSSStyleDeclaration.prototype = new Object();
+    CSSStyleDeclaration.prototype.getProperty = function(a) {
+        return this.getAttribute(a);
+    };
+    CSSStyleDeclaration.prototype.setProperty = function(a,b) {
+        return this.setAttribute(a,b);
+    }
+    CSSStyleDeclaration.prototype.removeProperty = function(a) {
+        return this.removeAttribute(a);
+    }
+  }
+  </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/d3.js"></script>
+  <script src="/js/d3.layout.js"></script>
+  <script src="/js/logger.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/logger.css" />
+
+</head>
+<body>
+  <div id="info" class="monospace selection"><div>Logger</div><select id="logSelect" value="TailMe.txt"></select><button onclick="logChange()">Select</button><!--<button onclick="window.open('/admin.html')">Update</button>--></div>
+  <div id="info" class="trebuchet"></div>
+  <div id="chart" class="monospace selection"></div>
+  <div id="tailContainer" class="monospace selection">
+  	<div id="tail"></div>
+  </div>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+	//Resize tail window to fill screen.
+	function findPos(obj){var curleft = curtop = 0; if(obj.offsetParent){do{curleft+= obj.offsetLeft; curtop+= obj.offsetTop;} while(obj=obj.offsetParent);} return [curleft, curtop]}
+	$("#tailContainer").height(window["innerHeight"]-findPos(document.getElementById("tailContainer"))[1]-35);
+	$(window).resize(function(evt){
+		$("#tailContainer").height(window["innerHeight"]-findPos(document.getElementById("tailContainer"))[1]-35);
+	});
+</script>
+
+</body>
+</html>

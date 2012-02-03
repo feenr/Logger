@@ -1,0 +1,15 @@
+circle.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+line.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+#chart{
+	height:250px;
+	//width:1000px;
+	//border: 1px solid black;
+}
